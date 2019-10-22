@@ -3,6 +3,7 @@ package parjun8840.product.entity;
  * This is abstract class and can't be instantiated and the purpose is for DRY principle.
  * We don't want client to create Object of Product class.
  * We can use Product to create Pointer.
+ * abstract method is without body.
  */
 public abstract class Product {
 private int id;
