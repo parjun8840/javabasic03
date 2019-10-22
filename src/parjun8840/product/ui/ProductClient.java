@@ -37,6 +37,8 @@ public class ProductClient {
 private static void printOCP(Product[] products) {
 	for (Product p : products) {// p is a pointer pointing to mobile, tv, washing machine etc.
 		System.out.println("*********");
+		//p.getClass().getMethods()  is a part of Object class- > Object class return Class and getclass is a part of class
+		//what it returns is a part of "Reflection API".
 		Method[] methods = p.getClass().getMethods();// p.class gives Mobile if the products is of type Mobile.
 		for (Method m : methods) {// "m" is a pointer to array of methods. Method[] is from reflection api.
 			if (m.getName().startsWith("get")) {
